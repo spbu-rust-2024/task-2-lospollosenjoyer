@@ -7,6 +7,10 @@ fn longest_palindrome(input_str: String) -> String {
     let mut lp_left_index: usize = 0;
     let mut lp_right_index: usize = 0;
     
+    if input_str.len() == 0 {
+        return input_str;
+    }
+
     for current_index in 0..input_str.len() {
         left_index = current_index;
         right_index = current_index;
