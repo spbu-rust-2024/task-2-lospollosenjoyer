@@ -66,7 +66,5 @@ fn main() {
         .read_line(&mut input_line)
         .expect("Failed to read a line!");
 
-    let truncate = input_line.ends_with("\n");
-
-    println!("{}", longest_palindrome(input_line[..input_line.len() - truncate as usize].to_string()));
+    println!("{}", longest_palindrome(input_line));
 }
